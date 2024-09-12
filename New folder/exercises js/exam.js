@@ -19,20 +19,20 @@ function Mission4(arr3) {
         return 0; 
     }
 
-    let isAscending = true;
-    let isDescending = true;
+    let Asc = true;
+    let Des = true;
 
     for (let i = 1; i < arr3.length; i++) {
         if (arr3[i] > arr3[i - 1]) {
-            isDescending = false;
+            Des = false;
         } else if (arr3[i] < arr3[i - 1]) {
-            isAscending = false;
+            Asc = false;
         }
     }
 
-    if (isAscending) {
+    if (Asc) {
         return 1;
-    } else if (isDescending) {
+    } else if (Des) {
         return -1;
     } else {
         return 0;
